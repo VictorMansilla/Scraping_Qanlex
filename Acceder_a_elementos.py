@@ -3,10 +3,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
-from Para_Scraping.Actuaciones import informacion_tabla_accion ,informacion_tabla_notas
-from Para_Scraping.Intervenientes import informacion_tabla_partes, informacion_tabla_fiscales
-from Para_Scraping.Vinculados import informacion_tabla_viculados
-from Para_Scraping.Recursos import informacion_tabla_recursos
+from Secciones.Actuaciones import informacion_tabla_accion ,informacion_tabla_notas
+from Secciones.Intervenientes import informacion_tabla_partes, informacion_tabla_fiscales
+from Secciones.Vinculados import informacion_tabla_viculados
+from Secciones.Recursos import informacion_tabla_recursos
 
 def acceder_a_elementos(driver, link, Expediente):
     #Variable de espera, hasta 10 segundos

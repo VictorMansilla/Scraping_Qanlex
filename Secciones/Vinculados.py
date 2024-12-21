@@ -10,7 +10,7 @@ def informacion_tabla_viculados(driver, Expediente):
     espera = WebDriverWait(driver, 10)
     pagina_de_tabla_accion = 0
 
-    while True:        
+    while True:
         html = driver.page_source
         html_parseado = BeautifulSoup(html, 'html.parser')
         tabla_accion = html_parseado.find(id="expediente:connectedTable")

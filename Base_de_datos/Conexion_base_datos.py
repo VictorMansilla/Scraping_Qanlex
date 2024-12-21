@@ -7,8 +7,8 @@ def conexion_base_de_datos():
         conexion = mysql.connector.connect(
             host="localhost",       # Servidor MySQL (usa 'localhost' para tu computadora local)
             user="root",            # Usuario (generalmente 'root' para el administrador)
-            password="pysqlthon",  # Contraseña del usuario
-            database="Scraping"    # Nombre de la base de datos existente
+            password="*",  # Contraseña del usuario
+            database="*"    # Nombre de la base de datos existente
         )
 
         # Verificar conexión
@@ -24,7 +24,7 @@ def conexion_base_de_datos():
             conexion = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="pysqlthon")
+                password="*")
 
             cursor = conexion.cursor()
 
@@ -38,8 +38,8 @@ def conexion_base_de_datos():
             return mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="pysqlthon",
-                database="Scraping")
+                password="*",
+                database="*")
         
         #Si no se pudo crear la base de datos
         except Error as e:
